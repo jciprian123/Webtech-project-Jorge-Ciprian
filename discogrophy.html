@@ -4,9 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Discography</title>
   </head>
   <style>
+    form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		input[type=text], select {
+			margin: 10px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			width: 50%;
+			font-size: 16px;
+		}
+		input[type=submit] {
+			margin: 10px;
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		#results {
+			margin-top: 50px;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			font-size: 16px;
+			width: 50%;
+			text-align: center;
+		}
     table {
       border: 2px solid black;
       width: 500px;
@@ -46,17 +80,25 @@
       flex-grow: 1;
       text-align: center;
     }
+    th{padding-top: 2px;}
+    #all{
+        width: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
   </style>
   <body>
     <header>
       <div class="menu-items">
         <a href="macmiller.html">Home</a>
-        <a href="biography.html">Biography</a>
+        <a href="biogrophy.html">Biography</a>
         <a href="earlylife.html">Early Life</a>
         <a href="c&r.html">Collaborations and Relationships</a>
-        <a href="discography.html">Discography</a>
+        <a href="discogrophy.html">Discography</a>
       </div>
     </header>
+    <br>
     <table>
       <tr>
         <th>Albums</th>
@@ -172,5 +214,38 @@
         </td>
       </tr>
     </table>
+    <img src="photos/MacMiller_DiscographyCollage_Poster_fce6443f-01de-4f19-be07-2b27f0355c2a.png" alt="Albums" id="all">
+    <br>
+    <form id="survey-form" onsubmit="showResults(event)">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+		<label for="album">Favorite album</label>
+		<select id="album" name="album" required>
+			<option value="">-- Select your favorite album --</option>
+			<option value="Blue_Slide_Park">Blue Slide Park</option>
+			<option value="Watching_Movies_With_The_Sound_Off">Watching Movies with the Sound Off</option>
+			<option value="Faces">Faces</option>
+			<option value="The_Divine_Feminine">Devine Feminine</option>
+			<option value="goodam">GOOD AM</option>
+			<option value="swimming">Swimming</option>
+			<option value="circles">Circles</option>
+		<input type="submit" value="Submit">
+	</form>
+	<div id="results">
+	<script>
+		function showResults(event) {
+			event.preventDefault();
+			const name = document.getElementById("name").value;
+			const album = document.getElementById("album").value;
+			const gender = document.querySelector('input[name="gender"]:checked').value;
+			const resultsContainer = document.getElementById("results-container");
+			const results = document.createElement("div");
+			results.window alert = `<p>Thank you for completing the survey, ${name}!</p>
+				<p>Your favorite album is ${album}.</p>`;
+			resultsContainer.appendChild(results);
+           
+		}
+	</script>
+    </div>
   </body>
 </html>
