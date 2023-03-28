@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"/>
+    <title>Web Terchnologies</title>
+    <style>
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: lightblue;
+      }
+      h1 {
+        font-family: serif;
+        color: rgb(70, 3, 3);
+        text-align: center;
+      }
+      h2 {
+        font-family: "Tangerine", serif;
+        text-align: left;
+        color: rgb(236, 32, 32);
+        font-size: 36px;
+      }
+      h3 {
+        font-family: "Tangerine", serif;
+        color: blue;
+        text-align: center;
+        font-size: 36px;
+      }
+      p {
+        font-family: sans-serif;
+        color: blueviolet;
+        font-size: 1.2em;
+        text-align: right;
+      }
+      p {
+        text-indent: 30px;
+      }
+      body {
+        margin-left: 200px;
+        margin-right: 200px;
+      }
+      img {
+        padding: 10px;
+        margin: 0px 20px 0px 20px;
+      }
+      ul {
+        font-family: Arial;
+        color: green;
+        font-size: 1.2em;
+      }
+      .capital {
+        font-size: 1.5em;
+        color: blue;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #38444d;
+      }
+      li {
+        float: left;
+      }
+      li a,
+      .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      li a:hover,
+      .dropdown:hover .dropbtn {
+        background-color: red;
+      }
+      li.dropdown {
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+      .dropdown:hover .dropdown-content{
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="header">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#contact">Contact Info</a></li>
+
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Homework 2</a>
+        <div class="dropdown-content">
+          <a href="hw2.html">Hw2</a>
+          <a href="hw2-2.html">Hw2-2</a>
+          <a href="hw2-3.html">Hw2-3</a>
+          <a href="hw2-4.html">Hw2-4</a>
+        </div>
+      </li>
+    </ul>
+    <hr />
+    <h2 id="about-me">About Me</h2>
+    <p>
+      <img
+        src="photos/IMG-7724.jpg"
+        alt="Picture of Me"
+        height="180"
+        style="float: left"
+      />
+      My name is <span class="capital">J</span>orge
+      <span class="capital">C</span>iprian and was born and raised in New
+      Jersey. My mother is from Colombia &#38; my father is from Cuba. Growing
+      up I always loved to play soccer. Since I was a goalie my favorite player
+      was always Iker Casillas.
+    </p>
+    <p>
+      I chose to come to
+      <a href="https://www.babson.edu/">Babson College</a> because ever since I
+      was little I wanted to become an entreprenuer. I wanted to have my own
+      business creating all of the crazy ideas that came to my mind. When
+      looking at colleges I visited Babson and saw their focus on
+      entreprenuership &#38; knew it was the place for me.
+    </p>
+
+    <hr />
+
+    <h2 id="interests">My Interests</h2>
+
+    <p>
+      <img
+        src="https://pyxis.nymag.com/v1/imgs/727/a66/30f0a3ad0b67d8b7fe0ae62fce4af9afde-bic-sewing-machine.rhorizontal.w1100.jpg"
+        alt="sewing machine"
+        height="180"
+        title="Sewing"
+        style="float: left"
+      />
+      My favorite hobby is thrifting clothing. I like to find old used and
+      vintage clothing and give them new life. I also like to take the clothing
+      and turn it into new things. Creating clothing is another one of my
+      hobbies and a lot of times the clothing from the thrift is used for
+      materials to make new clothing. I often sell the items that I purchase on
+      a website called <a href="https://www.grailed.com/">Grailed</a>.
+    </p>
+    <br /><br />
+
+    <br /><br />
+    <hr />
+    <h3 id="contact">Contact Information</h3>
+    <p>
+      Jorge Ciprian Web Terchnologies <br />
+      <br />
+      Github profile:
+      <a href="https://github.com/jciprian123/WebTech"
+        >https://github.com/jciprian123/WebTech</a
+      >
+      <br />
+      Email: <a href="mailto:jciprian1@babson.edu">jciprian1@babson.edu</a>
+      <br />
+      Visit my <a href="sitemap.html">Portfolio</a>
+    </p>
+    <ul>
+      <a href="https://github.com/jciprian123/WebTech"></a>
+    </ul>
+    <ul>
+      <a href="jciprian1@babosn.edu"></a>
+    </ul>
+    <ul>
+      <a href="sitemap.html"></a>
+    </ul>
+    <ul></ul>
+  </body>
+</html>
