@@ -1,20 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
-    body{
-        background-color: aquamarine;
-    }
-</style>
-<body>
-    <h1>Coming soon...</h1>
-    <img src="photos/mac-miller-wiz-khalifa.jpg" alt="mac-miller-wiz-khalifa">
-    <img src="photos/Mac-Miller-Snoop-Dogg.jpg" alt="Mac-Miller-Snoop-Dogg">
-    im
-</body>
+    <style>
+      div {
+        display: flex;
+        justify-content: right;
+      }
+      body {
+        background-color: blanchedalmond;
+      }
+      #slideshow {
+        width: 100%;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+      }
+      #slideshow img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      #slideshow img.active {
+        opacity: 1;
+      }
+      .slideshow-buttons {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .slideshow-button {
+        background: none;
+        border: none;
+        font-size: 6em;
+        cursor: pointer;
+        color: black;
+        padding: 0.5em;
+      }
+      body {
+        background-color: blanchedalmond;
+      }
+    
+      .menu-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: rgb(15, 15, 211);
+        flex-wrap: wrap;
+      }
+      .menu-items a {
+        display: inline-block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        flex-grow: 1;
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+        justify-content: center;
+      }
+  
+      .collaboration {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        flex-grow: 1; 
+  text-align: center;
+      }
+
+      .collaboration img {
+        width: 200px;
+  height: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+      }
+
+      .collaboration p {
+        font-size: 18px;
+        text-align: center;
+      }
+      header {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      #main {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .menu-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: rgb(15, 15, 211);
+        flex-wrap: wrap;
+      }
+      .menu-items a {
+        display: inline-block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        flex-grow: 1;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="menu-items">
+        <a href="index.html">Home</a>
+        <a href="biogrophy.html">Biography</a>
+        <a href="earlylife.html">Early Life</a>
+        <a href="c&r.html">Collaborations and Relationships</a>
+        <a href="discogrophy.html">Discography</a>
+        <a href="new.html">Extras</a>
+      </div>
+    </header>
+    </header>
+    <h1>Collaborations and Relationships</h1>
+    <div id="slideshow">
+      <img
+        class="active"
+        src="photos/mac-miller-wiz-khalifa.jpg"
+        alt="slideshow-image"
+      />
+      <img src="photos/Mac-Miller-Snoop-Dogg.jpg" alt="slideshow-image" />
+      <img src="photos/Mac-Miller-and-Schoolboy-Q.gif" alt="slideshow-image" />
+      <img
+        src="photos/mac-tyler-the-creator-v0-h7l5q58wm5981.webp"
+        alt="slideshow-image"
+      />
+      <img src="photos/macmiller-and-ariannagrande.jpg" alt="slideshow-image" />
+      <div class="slideshow-buttons">
+        <button id="prev-button" class="slideshow-button">&#8249;</button>
+        <button id="next-button" class="slideshow-button">&#8250;</button>
+      </div>
+    </div>
+    <br />
+    <div class="collaboration">
+      <div class="collaboration__info">
+        <p>
+          <strong>Ariana Grande</strong> <br>
+          Mac Miller and Ariana Grande collaborated on several occasions,
+          including the hit song "The Way," which was released in 2013. The two
+          were also in a relationship for nearly two years before breaking up in
+          2018.
+        </p>
+      </div>
+      <img
+        class="collaboration__image"
+        src="photos/arianna.jpg"
+        alt="mac-arianna"
+      />
+    </div>
+
+    <div class="collaboration">
+      <div class="collaboration__info">
+        <p>
+          <strong>Anderson .Paak</strong> <br>
+          Mac Miller and Anderson .Paak collaborated on the song "Dang!" in
+          2016, which was featured on Mac's album "The Divine Feminine."
+        </p>
+      </div>
+      <img
+        class="collaboration__image"
+        src="photos/anderson.jpg"
+        alt="mac-miller-anderson"
+      />
+    </div>
+
+    <div class="collaboration">
+      <div class="collaboration__info">
+        <p>
+          <strong>Pharrell Williams</strong> <br>
+          Mac Miller worked with Pharrell Williams on his 2015 album "GO:OD
+          AM," specifically on the songs "Weekend" and "In the Bag."
+        </p>
+      </div>
+      <img
+        class="collaboration__image"
+        src="photos/pharell.jpg"
+        alt="pharell"
+      />
+    </div>
+
+    <div class="collaboration">
+      <div class="collaboration__info">
+        <p>
+          <strong>Ab-Soul</strong> <br>
+          Mac Miller and Ab-Soul collaborated on the song "The End Is Near" in
+          2012, which was featured on the "Macadelic" mixtape. Schoolboy Q - Mac
+          Miller and Schoolboy Q collaborated on the song "Gees" in 2013, which
+          was featured on Mac's album "Watching Movies with the Sound Off."
+        </p>
+      </div>
+      <img
+        class="collaboration__image"
+        src="photos/eral (2).jpg"
+        alt="absoul"
+      />
+    </div>
+
+    <div class="collaboration">
+      <div class="collaboration__info">
+        <p>
+          <strong>Earl Sweatshirt</strong> <br>
+          Mac Miller and Earl Sweatshirt collaborated on the song "Guild" in
+          2013, which was featured on Mac's album "Watching Movies with the
+          Sound Off."
+        </p>
+      </div>
+      <img
+        class="collaboration__image"
+        src="photos/eral (1).jpg"
+        alt="earlsweatshirt"
+      />
+    </div>
+
+    <script>
+      const slideshowImages = document.querySelectorAll("#slideshow img");
+      let currentImageIndex = 0;
+
+      function updateSlideshow() {
+        slideshowImages.forEach((image, index) => {
+          if (index === currentImageIndex) {
+            image.classList.add("active");
+          } else {
+            image.classList.remove("active");
+          }
+        });
+      }
+
+      const prevButton = document.getElementById("prev-button");
+      prevButton.addEventListener("click", () => {
+        currentImageIndex--;
+        if (currentImageIndex < 0) {
+          currentImageIndex = slideshowImages.length - 1;
+        }
+        updateSlideshow();
+      });
+
+      const nextButton = document.getElementById("next-button");
+      nextButton.addEventListener("click", () => {
+        currentImageIndex++;
+        if (currentImageIndex >= slideshowImages.length) {
+          currentImageIndex = 0;
+        }
+        updateSlideshow();
+      });
+
+      updateSlideshow();
+    </script>
+  </body>
 </html>

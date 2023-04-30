@@ -7,97 +7,159 @@
     <title>Discography</title>
   </head>
   <style>
-    form {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin-top: 50px;
-		}
-		input[type=text], select {
-			margin: 10px;
-			padding: 10px;
-			border: 1px solid #ccc;
-			border-radius: 4px;
-			box-sizing: border-box;
-			width: 50%;
-			font-size: 16px;
-		}
-		input[type=submit] {
-			margin: 10px;
-			background-color: #4CAF50;
-			color: white;
-			padding: 10px 20px;
-			border: none;
-			border-radius: 4px;
-			cursor: pointer;
-			font-size: 16px;
-		}
-		#results {
-			margin-top: 50px;
-			padding: 20px;
-			border: 1px solid #ccc;
-			border-radius: 4px;
-			font-size: 16px;
-			width: 50%;
-			text-align: center;
-		}
-    table {
-      border: 2px solid black;
-      width: 500px;
-      width: 70%;
-      margin-left: auto;
-      margin-right: auto;
-      font-family: Arial;
-      border-collapse: collapse;
-      background-color: rgb(112, 112, 133);
-    }
-    .menu-items a,
-    .search a,
-    .bag a {
-      display: inline-block;
-      padding: 15px;
-      color: #ffffff;
-      text-decoration: none;
-    }
-    .menu-items a:hover,
-    .search a:hover,
-    .bag a:hover {
-      background-color: blueviolet;
-    }
-    .menu-items {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      background-color: navy;
-      flex-wrap: wrap;
-    }
-    .menu-items a {
-      display: inline-block;
-      padding: 15px;
-      color: #ffffff;
-      text-decoration: none;
-      flex-grow: 1;
-      text-align: center;
-    }
-    th{padding-top: 2px;}
-    #all{
-        width: 1000px;
+    h1{display: flex;
+      justify-content: center;}
+    header {
+    background-color: navy;
+  }
+  div{display: flex;
+    justify-content: center;}
+
+  .menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .menu-items a {
+    display: inline-block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+  }
+
+  .menu-items a:hover {
+    background-color: blueviolet;
+  }
+
+  table {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    padding-left: 50px;
+    
+  }
+
+  th {border-style: solid;
+    border-color: black;
+    background-color: lightcyan;
+  }
+  td{border-style: solid;
+    border-color: black;}
+
+  img {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  label {
+    margin: 10px 0;
+  }
+
+  input[type=text], select {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 50%;
+    font-size: 16px;
+  }
+
+  input[type=radio] {
+    margin-right: 5px;
+  }
+  td{padding-left: 30px;
+  padding-right: 30px;}
+
+  input[type=submit] {
+    margin: 10px;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  #results-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #results {
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 50%;
+    text-align: center;
+  }
+  body {
+        background-color: blanchedalmond;
+      }
+      header {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      #main {
+        display: block;
+        margin: 0 auto;
+      }
+      header {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      #main {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .menu-items {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-    }
-  </style>
+        padding: 20px;
+        background-color: rgb(15, 15, 211);
+        flex-wrap: wrap;
+      }
+      .menu-items a {
+        display: inline-block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        flex-grow: 1;
+        text-align: center;
+      }
+    </style>
+  </head>
   <body>
     <header>
       <div class="menu-items">
-        <a href="macmiller.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="biogrophy.html">Biography</a>
         <a href="earlylife.html">Early Life</a>
         <a href="c&r.html">Collaborations and Relationships</a>
         <a href="discogrophy.html">Discography</a>
+        <a href="new.html">Extras</a>
       </div>
     </header>
+  <h1>Discography</h1>
     <br>
     <table>
       <tr>
@@ -214,38 +276,63 @@
         </td>
       </tr>
     </table>
-    <img src="photos/MacMiller_DiscographyCollage_Poster_fce6443f-01de-4f19-be07-2b27f0355c2a.png" alt="Albums" id="all">
+    <br>
+    <div><img src="photos/MacMiller_DiscographyCollage_Poster_fce6443f-01de-4f19-be07-2b27f0355c2a.png" alt="Albums" id="all"></div>
     <br>
     <form id="survey-form" onsubmit="showResults(event)">
-		<label for="name">Name:</label>
-		<input type="text" id="name" name="name" required>
-		<label for="album">Favorite album</label>
-		<select id="album" name="album" required>
-			<option value="">-- Select your favorite album --</option>
-			<option value="Blue_Slide_Park">Blue Slide Park</option>
-			<option value="Watching_Movies_With_The_Sound_Off">Watching Movies with the Sound Off</option>
-			<option value="Faces">Faces</option>
-			<option value="The_Divine_Feminine">Devine Feminine</option>
-			<option value="goodam">GOOD AM</option>
-			<option value="swimming">Swimming</option>
-			<option value="circles">Circles</option>
-		<input type="submit" value="Submit">
-	</form>
-	<div id="results">
-	<script>
-		function showResults(event) {
-			event.preventDefault();
-			const name = document.getElementById("name").value;
-			const album = document.getElementById("album").value;
-			const gender = document.querySelector('input[name="gender"]:checked').value;
-			const resultsContainer = document.getElementById("results-container");
-			const results = document.createElement("div");
-			results.windowalert = `<p>Thank you for completing the survey, ${name}!</p>
-				<p>Your favorite album is ${album}.</p>`;
-			resultsContainer.appendChild(results);
-           
-		}
-	</script>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="album">Favorite album:</label>
+      <select id="album" name="album" required>
+        <option value="">-- Select your favorite album --</option>
+        <option value="Blue Slide Park">Blue Slide Park</option>
+        <option value="Watching Movies With The Sound Off">Watching Movies with the Sound Off</option>
+        <option value="Faces">Faces</option>
+        <option value="The Divine Feminine">Divine Feminine</option>
+        <option value="Goodam">GOOD AM</option>
+        <option value="Swimming">Swimming</option>
+        <option value="Circles">Circles</option>
+      </select>
+      <br>
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+    <div id="results-container"></div>
+    <script>
+    function showResults(event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value;
+      const album = document.getElementById("album").value;
+      const gender = document.querySelector('input[name="gender"]:checked').value;
+      const resultsContainer = document.getElementById("results-container");
+      const results = document.createElement("div");
+      results.innerHTML = `<p>Thank you for completing the survey, ${name}!</p>
+        <p>Your favorite album is ${album}.</p>
+        <p>Your gender is ${gender}.</p>`;
+      resultsContainer.appendChild(results);
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+  const images = document.querySelectorAll('img');
+
+  images.forEach((img) => {
+    img.addEventListener('mouseover', function () {
+      img.style.transform = 'scale(2)';
+    });
+
+    img.addEventListener('mouseout', function () {
+      img.style.transform = 'scale(1)';
+    });
+  });
+});
+
+  </script>
     </div>
   </body>
 </html>

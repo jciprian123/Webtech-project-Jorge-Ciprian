@@ -4,52 +4,111 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Mac Miller Early Life</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <style>
+      div {
+        display: flex;
+        justify-content: center;
+      }
+      #lilmac {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      body {
+        background-color: blanchedalmond;
+      }
+      #pic {
+        max-width: 1000px;
+      }
+      p {
+        text-align: center;
+        font-size: x-large;
+      }
+      h1, h2 {
+        display: flex;
+        justify-content: center;
+      }
+      button {
+        display: flex;
+        justify-content: center;
+      }
+      button {
+        border: none;
+        padding: 5px 10px;
+        text-align: center;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border-radius: 3px;
+        background-color: #333333;
+        color: #f4f4f4;
+      }
+      .dark-mode {
+        background-color: black;
+        color: white;
+      }
+      .button-container {
+        text-align: center;
+      }
+      button {
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+        font-size: 16px;
+      }
+      body {
+        background-color: blanchedalmond;
+      }
+      header {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      #main {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .menu-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: rgb(15, 15, 211);
+        flex-wrap: wrap;
+      }
+      .menu-items a {
+        display: inline-block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        flex-grow: 1;
+        text-align: center;
+      }
+    </style>
   </head>
-  <style>
-    body{background-color: blanchedalmond;}
-    .menu-items a,
-    .search a,
-    .bag a {
-      display: inline-block;
-      padding: 15px;
-      color: #ffffff;
-      text-decoration: none;
-    }
-    .menu-items a:hover,
-    .search a:hover,
-    .bag a:hover {
-      background-color: blueviolet;
-    }
-    .menu-items {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      background-color: navy;
-      flex-wrap: wrap;
-    }
-    .menu-items a {
-      display: inline-block;
-      padding: 15px;
-      color: #ffffff;
-      text-decoration: none;
-      flex-grow: 1;
-      text-align: center;
-    }
-    #pic, #lilmac {width: 1000px;
-    justify-content: center;
-display: flex;}
-p{text-align: center;}
-  </style>
-        <div class="menu-items">
-          <a href="macmiller.html">Home</a>
-          <a href="biogrophy.html">Biography</a>
-          <a href="earlylife.html">Early Life</a>
-          <a href="c&r.html">Collaborations and Relationships</a>
-          <a href="discogrophy.html">Discography</a>
-        </div>
-      </header>
+  <body>
+    <header>
+      <div class="menu-items">
+        <a href="index.html">Home</a>
+        <a href="biogrophy.html">Biography</a>
+        <a href="earlylife.html">Early Life</a>
+        <a href="c&r.html">Collaborations and Relationships</a>
+        <a href="discogrophy.html">Discography</a>
+        <a href="new.html">Extras</a>
+      </div>
+    </header>
+    <h1>Early Life</h1>
+    <h2> Color Scheme:</h2>
+    <div class="button-container">
+      <button id="dark-btn">Dark</button>
+      <button id="light-btn">Light</button>
+    </div>
+    <br />
+
     <div><img src="photos/bqr0v1od80z61.webp" alt="then vs now" id="pic"/></div>
     <p>
       Mac Miller, whose birth name was Malcolm James McCormick, was born on
@@ -72,7 +131,7 @@ p{text-align: center;}
       the high school parties. But once I found out hip-hop is almost like a
       job, that's all I did."
     </p>
-    <img src="photos/Photo-posted-by-@92tilinfinity-on-Instagram.webp" alt="young" id="lilmac">
+    <div><img src="photos/Photo-posted-by-@92tilinfinity-on-Instagram.webp" alt="young" id="lilmac"></div>
     <p>
       Miller released his first mixtape, But My Mackin' Ain't Easy, under the
       name Easy Mac in 2007 at the age of fifteen. He later changed his name to
@@ -91,4 +150,17 @@ p{text-align: center;}
       respected and influential artist in the hip-hop community.
     </p>
   </body>
+  <script>
+   const darkBtn = document.getElementById("dark-btn");
+  const lightBtn = document.getElementById("light-btn");
+  const body = document.querySelector("body");
+
+  darkBtn.addEventListener("click", () => {
+    body.classList.add("dark-mode");
+  });
+
+  lightBtn.addEventListener("click", () => {
+    body.classList.remove("dark-mode");
+  });
+  </script>
 </html>

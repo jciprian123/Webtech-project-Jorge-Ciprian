@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .sitemap {
+      display: flex;
+      flex-direction: column;
+    }
+    .menu-items a,
+    .search a,
+    .bag a {
+      display: inline-block;
+      padding: 15px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .menu-items a:hover,
+    .search a:hover,
+    .bag a:hover {
+      background-color: blueviolet;
+    }
+    .menu-items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: rgb(15, 15, 211);
+      flex-wrap: wrap;
+    }
+    .menu-items a {
+      display: inline-block;
+      padding: 15px;
+      color: #ffffff;
+      text-decoration: none;
+      flex-grow: 1;
+      text-align: center;
+    }
+    #vid,
+    h1 {
+      display: flex;
+      justify-content: center;
+    }
+    body {
+        background-color: blanchedalmond;
+      }
+      header {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      #main {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .menu-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: rgb(15, 15, 211);
+        flex-wrap: wrap;
+      }
+      .menu-items a {
+        display: inline-block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+        flex-grow: 1;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="menu-items">
+        <a href="index.html">Home</a>
+        <a href="biogrophy.html">Biography</a>
+        <a href="earlylife.html">Early Life</a>
+        <a href="c&r.html">Collaborations and Relationships</a>
+        <a href="discogrophy.html">Discography</a>
+        <a href="new.html">Extras</a>
+      </div>
+    </header>
+    <h1>Extras</h1>
+
+    <iframe id="vid"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/UQ3w99trVUk"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <div class="sitemap">
+      <a href="index.html">Home</a>
+      <a href="biography.html">Biography</a>
+      <a href="earlylife.html">Early Life</a>
+      <a href="c&r.html">Collaborations and Relationships</a>
+      <a href="discogrophy.html">Discography</a>
+      <a href="new.html">Extras</a>
+    </div>
+  </body>
+</html>
